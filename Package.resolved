@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "32573d05b91d8b7349ca31b4726e80212483f02a",
+          "version": "4.8.0"
+        }
+      },
+      {
+        "package": "NetworkKit",
+        "repositoryURL": "https://github.com/buscarini/networkkit.git",
+        "state": {
+          "branch": null,
+          "revision": "88ed7dbd37a34ed67f6463aa014718794edfcd40",
+          "version": "0.1.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
