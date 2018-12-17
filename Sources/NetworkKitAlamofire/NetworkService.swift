@@ -76,7 +76,7 @@ public extension NetworkService {
         dataRequest
             .validate(statusCode: successCodesArray)
             .downloadProgress(closure: { requestProgress in
-				progress(UInt64(requestProgress.completedUnitCount), UInt64(requestProgress.totalUnitCount))
+				progress(requestProgress.completedUnitCount, requestProgress.totalUnitCount)
 			})
             .response(completionHandler: { response in
                 
@@ -145,7 +145,7 @@ public extension NetworkService {
                             
                             request
                             	.uploadProgress(closure: { requestProgress in
-									progress(UInt64(requestProgress.completedUnitCount), UInt64(requestProgress.totalUnitCount))
+									progress(requestProgress.completedUnitCount, requestProgress.totalUnitCount)
 								})
                             	.response { response in
                                 

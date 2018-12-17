@@ -832,7 +832,7 @@
             "OBJ_37",
             "OBJ_60"
          );
-         name = "NetworkKit 0.1.6";
+         name = "NetworkKit 0.1.7";
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
@@ -1052,10 +1052,10 @@
       "OBJ_61" = {
          isa = "PBXGroup";
          children = (
-            "Alamofire::Alamofire::Product",
-            "NetworkKitAlamofire::NetworkKitAlamofire::Product",
+            "NetworkKit::NetworkKit::Product",
             "NetworkKitAlamofire::NetworkKitAlamofireTests::Product",
-            "NetworkKit::NetworkKit::Product"
+            "NetworkKitAlamofire::NetworkKitAlamofire::Product",
+            "Alamofire::Alamofire::Product"
          );
          name = "Products";
          path = "";
