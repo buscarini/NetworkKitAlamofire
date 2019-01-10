@@ -4,111 +4,122 @@ import NetworkKit
 import Alamofire
 
 public extension NetworkService {
-	public static func alamofire(_ baseUrl: URL) -> NetworkService {
-		return NetworkService.init(baseUrl: baseUrl, request: self.alamofireRequest)
+	public static var defaultConfig: URLSessionConfiguration {
+		let configuration = URLSessionConfiguration.default
+		configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+		return configuration
+	}
+	
+	public static func alamofire(_ baseUrl: URL, _ sessionConfig: URLSessionConfiguration = NetworkService.defaultConfig) -> NetworkService {
+		return NetworkService.init(baseUrl: baseUrl, request: self.alamofireRequest(sessionConfig))
 	}
 	
     @discardableResult
-    public static func alamofireRequest(
-		_ baseUrl: URL,
-    	_ request: NetworkKit.Request<Data>,
-    	log: @escaping NetworkService.Log,
-    	progress: @escaping NetworkService.Progress,
-    	completion: @escaping (NetworkKit.NetworkResponse<Data?>) -> Void
+	public static func alamofireRequest(_ sessionConfig: URLSessionConfiguration) -> (
+			URL,
+    		NetworkKit.Request<Data>,
+    		@escaping NetworkService.Log,
+    		@escaping NetworkService.Progress,
+    		@escaping (NetworkKit.NetworkResponse<Data?>) -> Void
 	) -> NetworkService.CancelRequest {
-        
-        let totalUrl = request.fullUrl(baseUrl: baseUrl)
-		
-		var components = URLComponents(url: totalUrl, resolvingAgainstBaseURL: false)
-		components?.queryItems = request.extraQueryItems
-		let finalUrl = components?.url ?? totalUrl
-        
-        switch request.type {
-        case .request(let parameters, let parametersEncoding):
-            return self.request(
-                url: finalUrl,
-                method: request.method,
-                headers: request.headers,
-                parameters: parameters,
-                parametersEncoding: parametersEncoding,
-                successCodes: request.successCodes,
-                log: log,
-                progress: progress,
-                completion: completion)
-            
-        case .uploadMultipartData(let parameters):
-            return uploadMultipart(
-                url: finalUrl,
-                method: request.method,
-                headers: request.headers,
-                parameters: parameters,
-                successCodes: request.successCodes,
-                log: log,
-				progress: progress,
-                completion: completion
-            )
-        }
+		return { baseUrl, request, log, progress, completion in
+			let totalUrl = request.fullUrl(baseUrl: baseUrl)
+			
+			var components = URLComponents(url: totalUrl, resolvingAgainstBaseURL: false)
+			components?.queryItems = request.extraQueryItems
+			let finalUrl = components?.url ?? totalUrl
+			
+			switch request.type {
+			case .request(let parameters, let parametersEncoding):
+				return self.request(
+					sessionConfig: sessionConfig,
+					url: finalUrl,
+					method: request.method,
+					headers: request.headers,
+					parameters: parameters,
+					parametersEncoding: parametersEncoding,
+					successCodes: request.successCodes,
+					log: log,
+					progress: progress,
+					completion: completion)
+				
+			case .uploadMultipartData(let parameters):
+				return uploadMultipart(
+					sessionConfig: sessionConfig,
+					url: finalUrl,
+					method: request.method,
+					headers: request.headers,
+					parameters: parameters,
+					successCodes: request.successCodes,
+					log: log,
+					progress: progress,
+					completion: completion
+				)
+			}
+		}
     }
     
     private static func request(
-        url: URL,
-        method: NetworkKit.HTTPMethod,
-        headers: [String: String]?,
-        parameters: [String: Any]?,
-        parametersEncoding: ParametersEncoding,
-        successCodes: Range<Int>,
-        log: @escaping NetworkService.Log,
-        progress: @escaping NetworkService.Progress,
-        completion: @escaping (NetworkKit.NetworkResponse<Data?>) -> Void
+		sessionConfig: URLSessionConfiguration,
+		url: URL,
+		method: NetworkKit.HTTPMethod,
+		headers: [String: String]?,
+		parameters: [String: Any]?,
+		parametersEncoding: ParametersEncoding,
+		successCodes: Range<Int>,
+		log: @escaping NetworkService.Log,
+		progress: @escaping NetworkService.Progress,
+		completion: @escaping (NetworkKit.NetworkResponse<Data?>) -> Void
         ) -> NetworkService.CancelRequest {
-        
-        let encodingAlamofire = parametersEncoding.alamofire
-        let methodAlamofire = method.alamofire
-        let successCodesArray = Array(successCodes.lowerBound ..< successCodes.upperBound)
+			let encodingAlamofire = parametersEncoding.alamofire
+			let methodAlamofire = method.alamofire
+			let successCodesArray = Array(successCodes.lowerBound ..< successCodes.upperBound)
 		
-        let dataRequest = Alamofire
-            .request(
-                url,
-                method: methodAlamofire,
-                parameters: parameters,
-                encoding: encodingAlamofire,
-                headers: headers)
-        
-        log(dataRequest.debugDescription)
-        
-        
-        dataRequest
-            .validate(statusCode: successCodesArray)
-            .downloadProgress(closure: { requestProgress in
-				progress(requestProgress.completedUnitCount, requestProgress.totalUnitCount)
-			})
-            .response(completionHandler: { response in
-                
-                let responseHTTP = response.response
-                let data = response.data
-                let error = response.error
-                
-                let statusCode = responseHTTP?.statusCode ?? 9999
-                
-                let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )
-                
-                log(response.debugDescription)
-                
-                if let error = error {
-                    let responseError = ResponseError.network(error)
-                    completion(.networkError(responseError, response))
-                    return
-                }
-                
-                let finalResponse = NetworkResponse.success(data, response)
-                completion(finalResponse)
-                
-            })
-        
-        return dataRequest.cancel
+			let manager = SessionManager(configuration: sessionConfig)
+		
+			let dataRequest = manager
+				.request(
+					url,
+					method: methodAlamofire,
+					parameters: parameters,
+					encoding: encodingAlamofire,
+					headers: headers)
+		
+			log(dataRequest.debugDescription)
+		
+			dataRequest
+				.validate(statusCode: successCodesArray)
+				.downloadProgress(closure: { requestProgress in
+					progress(requestProgress.completedUnitCount, requestProgress.totalUnitCount)
+				})
+				.response(completionHandler: { response in
+					
+					let responseHTTP = response.response
+					let data = response.data
+					let error = response.error
+					
+					let statusCode = responseHTTP?.statusCode ?? 9999
+					
+					let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )
+					
+					log(response.debugDescription)
+					
+					if let error = error {
+						let responseError = ResponseError.network(error)
+						completion(.networkError(responseError, response))
+						return
+					}
+					
+					let finalResponse = NetworkResponse.success(data, response)
+					completion(finalResponse)
+					
+				})
+		
+			return dataRequest.cancel
     }
     
     private static func uploadMultipart(
+		sessionConfig: URLSessionConfiguration,
         url: URL,
         method: NetworkKit.HTTPMethod,
         headers: [String: String]?,
@@ -120,8 +131,10 @@ public extension NetworkService {
         ) -> NetworkService.CancelRequest {
         
         let methodAlamofire = method.alamofire
-        
-        Alamofire
+		
+		let manager = SessionManager(configuration: sessionConfig)
+		
+        manager
             .upload(multipartFormData: { formData in
                 for (name, parameter) in parameters {
                     let data: Data = parameter.data
