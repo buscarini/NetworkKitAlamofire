@@ -10,6 +10,8 @@ extension ParametersEncoding {
             return JSONEncoding.default
         case .url:
             return URLEncoding.default
+		case let .other(encode):
+			return CustomEncoding(encode: encode)
         }
     }
 }
