@@ -14,9 +14,9 @@
         "package": "NetworkKit",
         "repositoryURL": "https://github.com/buscarini/networkkit.git",
         "state": {
-          "branch": null,
-          "revision": "46e1086ef7d4216c13b5926a31c570d75ec2e28b",
-          "version": "0.1.7"
+          "branch": "Multiple_parameter_sets",
+          "revision": "2c7395e32d95b4768e4064a8dd0595d50d535954",
+          "version": null
         }
       }
     ]

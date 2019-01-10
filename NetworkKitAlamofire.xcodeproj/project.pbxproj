@@ -5,10 +5,10 @@
    objects = {
       "Alamofire::Alamofire" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_67";
+         buildConfigurationList = "OBJ_68";
          buildPhases = (
-            "OBJ_70",
-            "OBJ_88"
+            "OBJ_71",
+            "OBJ_89"
          );
          dependencies = (
          );
@@ -24,9 +24,9 @@
       };
       "Alamofire::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_90";
+         buildConfigurationList = "OBJ_91";
          buildPhases = (
-            "OBJ_93"
+            "OBJ_94"
          );
          dependencies = (
          );
@@ -36,10 +36,10 @@
       };
       "NetworkKit::NetworkKit" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_96";
+         buildConfigurationList = "OBJ_97";
          buildPhases = (
-            "OBJ_99",
-            "OBJ_117"
+            "OBJ_100",
+            "OBJ_119"
          );
          dependencies = (
          );
@@ -55,9 +55,9 @@
       };
       "NetworkKit::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_156";
+         buildConfigurationList = "OBJ_158";
          buildPhases = (
-            "OBJ_159"
+            "OBJ_161"
          );
          dependencies = (
          );
@@ -67,14 +67,14 @@
       };
       "NetworkKitAlamofire::NetworkKitAlamofire" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_119";
+         buildConfigurationList = "OBJ_121";
          buildPhases = (
-            "OBJ_122",
-            "OBJ_126"
+            "OBJ_124",
+            "OBJ_128"
          );
          dependencies = (
-            "OBJ_129",
-            "OBJ_130"
+            "OBJ_131",
+            "OBJ_132"
          );
          name = "NetworkKitAlamofire";
          productName = "NetworkKitAlamofire";
@@ -88,26 +88,26 @@
       };
       "NetworkKitAlamofire::NetworkKitAlamofirePackageTests::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_138";
+         buildConfigurationList = "OBJ_140";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_141"
+            "OBJ_143"
          );
          name = "NetworkKitAlamofirePackageTests";
          productName = "NetworkKitAlamofirePackageTests";
       };
       "NetworkKitAlamofire::NetworkKitAlamofireTests" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_143";
+         buildConfigurationList = "OBJ_145";
          buildPhases = (
-            "OBJ_146",
-            "OBJ_148"
+            "OBJ_148",
+            "OBJ_150"
          );
          dependencies = (
-            "OBJ_152",
-            "OBJ_153",
-            "OBJ_154"
+            "OBJ_154",
+            "OBJ_155",
+            "OBJ_156"
          );
          name = "NetworkKitAlamofireTests";
          productName = "NetworkKitAlamofireTests";
@@ -121,9 +121,9 @@
       };
       "NetworkKitAlamofire::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_132";
+         buildConfigurationList = "OBJ_134";
          buildPhases = (
-            "OBJ_135"
+            "OBJ_137"
          );
          dependencies = (
          );
@@ -144,7 +144,7 @@
             "en"
          );
          mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_61";
+         productRefGroup = "OBJ_62";
          projectDirPath = ".";
          targets = (
             "Alamofire::Alamofire",
@@ -163,44 +163,63 @@
          sourceTree = "<group>";
       };
       "OBJ_100" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_41";
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_101",
+            "OBJ_102",
+            "OBJ_103",
+            "OBJ_104",
+            "OBJ_105",
+            "OBJ_106",
+            "OBJ_107",
+            "OBJ_108",
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113",
+            "OBJ_114",
+            "OBJ_115",
+            "OBJ_116",
+            "OBJ_117",
+            "OBJ_118"
+         );
       };
       "OBJ_101" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_42";
+         fileRef = "OBJ_41";
       };
       "OBJ_102" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_43";
+         fileRef = "OBJ_42";
       };
       "OBJ_103" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_44";
+         fileRef = "OBJ_43";
       };
       "OBJ_104" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_45";
+         fileRef = "OBJ_44";
       };
       "OBJ_105" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_46";
+         fileRef = "OBJ_45";
       };
       "OBJ_106" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_47";
+         fileRef = "OBJ_46";
       };
       "OBJ_107" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_48";
+         fileRef = "OBJ_47";
       };
       "OBJ_108" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_49";
+         fileRef = "OBJ_48";
       };
       "OBJ_109" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_50";
+         fileRef = "OBJ_49";
       };
       "OBJ_11" = {
          isa = "PBXFileReference";
@@ -209,45 +228,44 @@
       };
       "OBJ_110" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_51";
+         fileRef = "OBJ_50";
       };
       "OBJ_111" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_52";
+         fileRef = "OBJ_51";
       };
       "OBJ_112" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_53";
+         fileRef = "OBJ_52";
       };
       "OBJ_113" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_54";
+         fileRef = "OBJ_53";
       };
       "OBJ_114" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_57";
+         fileRef = "OBJ_54";
       };
       "OBJ_115" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_58";
+         fileRef = "OBJ_55";
       };
       "OBJ_116" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_59";
+         fileRef = "OBJ_58";
       };
       "OBJ_117" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_118" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_119" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
          );
-      };
-      "OBJ_119" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_120",
-            "OBJ_121"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
       };
       "OBJ_12" = {
          isa = "PBXGroup";
@@ -258,7 +276,16 @@
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_120" = {
+      "OBJ_121" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_122",
+            "OBJ_123"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_122" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             ENABLE_TESTABILITY = "YES";
@@ -295,7 +322,7 @@
          };
          name = "Debug";
       };
-      "OBJ_121" = {
+      "OBJ_123" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             ENABLE_TESTABILITY = "YES";
@@ -332,44 +359,36 @@
          };
          name = "Release";
       };
-      "OBJ_122" = {
+      "OBJ_124" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_123",
-            "OBJ_124",
-            "OBJ_125"
+            "OBJ_125",
+            "OBJ_126",
+            "OBJ_127"
          );
-      };
-      "OBJ_123" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_9";
-      };
-      "OBJ_124" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
       };
       "OBJ_125" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
+         fileRef = "OBJ_9";
       };
       "OBJ_126" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_127",
-            "OBJ_128"
-         );
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
       };
       "OBJ_127" = {
          isa = "PBXBuildFile";
-         fileRef = "Alamofire::Alamofire::Product";
+         fileRef = "OBJ_11";
       };
       "OBJ_128" = {
-         isa = "PBXBuildFile";
-         fileRef = "NetworkKit::NetworkKit::Product";
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_129",
+            "OBJ_130"
+         );
       };
       "OBJ_129" = {
-         isa = "PBXTargetDependency";
-         target = "Alamofire::Alamofire";
+         isa = "PBXBuildFile";
+         fileRef = "Alamofire::Alamofire::Product";
       };
       "OBJ_13" = {
          isa = "PBXGroup";
@@ -381,19 +400,27 @@
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_130" = {
+         isa = "PBXBuildFile";
+         fileRef = "NetworkKit::NetworkKit::Product";
+      };
+      "OBJ_131" = {
+         isa = "PBXTargetDependency";
+         target = "Alamofire::Alamofire";
+      };
+      "OBJ_132" = {
          isa = "PBXTargetDependency";
          target = "NetworkKit::NetworkKit";
       };
-      "OBJ_132" = {
+      "OBJ_134" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_133",
-            "OBJ_134"
+            "OBJ_135",
+            "OBJ_136"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_133" = {
+      "OBJ_135" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -411,7 +438,7 @@
          };
          name = "Debug";
       };
-      "OBJ_134" = {
+      "OBJ_136" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -429,30 +456,15 @@
          };
          name = "Release";
       };
-      "OBJ_135" = {
+      "OBJ_137" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_136"
+            "OBJ_138"
          );
-      };
-      "OBJ_136" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
       };
       "OBJ_138" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_139",
-            "OBJ_140"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_139" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
       };
       "OBJ_14" = {
          isa = "PBXFileReference";
@@ -460,25 +472,40 @@
          sourceTree = "<group>";
       };
       "OBJ_140" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_141",
+            "OBJ_142"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_141" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_142" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
          };
          name = "Release";
       };
-      "OBJ_141" = {
+      "OBJ_143" = {
          isa = "PBXTargetDependency";
          target = "NetworkKitAlamofire::NetworkKitAlamofireTests";
       };
-      "OBJ_143" = {
+      "OBJ_145" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_144",
-            "OBJ_145"
+            "OBJ_146",
+            "OBJ_147"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_144" = {
+      "OBJ_146" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             CLANG_ENABLE_MODULES = "YES";
@@ -513,7 +540,7 @@
          };
          name = "Debug";
       };
-      "OBJ_145" = {
+      "OBJ_147" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             CLANG_ENABLE_MODULES = "YES";
@@ -548,27 +575,15 @@
          };
          name = "Release";
       };
-      "OBJ_146" = {
+      "OBJ_148" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_147"
-         );
-      };
-      "OBJ_147" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
-      };
-      "OBJ_148" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_149",
-            "OBJ_150",
-            "OBJ_151"
+            "OBJ_149"
          );
       };
       "OBJ_149" = {
          isa = "PBXBuildFile";
-         fileRef = "NetworkKitAlamofire::NetworkKitAlamofire::Product";
+         fileRef = "OBJ_14";
       };
       "OBJ_15" = {
          isa = "PBXFileReference";
@@ -576,35 +591,47 @@
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_150" = {
-         isa = "PBXBuildFile";
-         fileRef = "Alamofire::Alamofire::Product";
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_151",
+            "OBJ_152",
+            "OBJ_153"
+         );
       };
       "OBJ_151" = {
          isa = "PBXBuildFile";
-         fileRef = "NetworkKit::NetworkKit::Product";
+         fileRef = "NetworkKitAlamofire::NetworkKitAlamofire::Product";
       };
       "OBJ_152" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkKitAlamofire::NetworkKitAlamofire";
+         isa = "PBXBuildFile";
+         fileRef = "Alamofire::Alamofire::Product";
       };
       "OBJ_153" = {
-         isa = "PBXTargetDependency";
-         target = "Alamofire::Alamofire";
+         isa = "PBXBuildFile";
+         fileRef = "NetworkKit::NetworkKit::Product";
       };
       "OBJ_154" = {
          isa = "PBXTargetDependency";
-         target = "NetworkKit::NetworkKit";
+         target = "NetworkKitAlamofire::NetworkKitAlamofire";
+      };
+      "OBJ_155" = {
+         isa = "PBXTargetDependency";
+         target = "Alamofire::Alamofire";
       };
       "OBJ_156" = {
+         isa = "PBXTargetDependency";
+         target = "NetworkKit::NetworkKit";
+      };
+      "OBJ_158" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_157",
-            "OBJ_158"
+            "OBJ_159",
+            "OBJ_160"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_157" = {
+      "OBJ_159" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -621,30 +648,6 @@
             SWIFT_VERSION = "4.2";
          };
          name = "Debug";
-      };
-      "OBJ_158" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.2";
-         };
-         name = "Release";
-      };
-      "OBJ_159" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_160"
-         );
       };
       "OBJ_16" = {
          isa = "PBXGroup";
@@ -657,8 +660,32 @@
          sourceTree = "<group>";
       };
       "OBJ_160" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_161" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_162"
+         );
+      };
+      "OBJ_162" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_60";
+         fileRef = "OBJ_61";
       };
       "OBJ_17" = {
          isa = "PBXGroup";
@@ -683,14 +710,14 @@
             "OBJ_35"
          );
          name = "Alamofire 4.8.0";
-         path = ".build/checkouts/Alamofire.git-850908484952095172/Source";
+         path = ".build/checkouts/Alamofire.git--5466590297036344884/Source";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_18" = {
          isa = "PBXFileReference";
          explicitFileType = "sourcecode.swift";
          name = "Package.swift";
-         path = "/Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/Alamofire.git-850908484952095172/Package.swift";
+         path = "/Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/Alamofire.git--5466590297036344884/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_19" = {
@@ -830,9 +857,9 @@
          isa = "PBXGroup";
          children = (
             "OBJ_37",
-            "OBJ_60"
+            "OBJ_61"
          );
-         name = "NetworkKit 0.1.7";
+         name = "NetworkKit";
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
@@ -842,14 +869,14 @@
             "OBJ_38"
          );
          name = "NetworkKit";
-         path = ".build/checkouts/networkkit.git-3592815588106199011/Sources/NetworkKit";
+         path = ".build/checkouts/networkkit.git--5964692761013315468/Sources/NetworkKit";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_38" = {
          isa = "PBXGroup";
          children = (
             "OBJ_39",
-            "OBJ_55"
+            "OBJ_56"
          );
          name = "Models";
          path = "Models";
@@ -871,7 +898,8 @@
             "OBJ_51",
             "OBJ_52",
             "OBJ_53",
-            "OBJ_54"
+            "OBJ_54",
+            "OBJ_55"
          );
          name = "Structure";
          path = "Structure";
@@ -971,69 +999,69 @@
             "OBJ_12",
             "OBJ_15",
             "OBJ_16",
-            "OBJ_61"
+            "OBJ_62"
          );
          path = "";
          sourceTree = "<group>";
       };
       "OBJ_50" = {
          isa = "PBXFileReference";
-         path = "Request+Utils.swift";
+         path = "Request+Constants.swift";
          sourceTree = "<group>";
       };
       "OBJ_51" = {
          isa = "PBXFileReference";
-         path = "Request.swift";
+         path = "Request+Utils.swift";
          sourceTree = "<group>";
       };
       "OBJ_52" = {
          isa = "PBXFileReference";
-         path = "RequestType.swift";
+         path = "Request.swift";
          sourceTree = "<group>";
       };
       "OBJ_53" = {
          isa = "PBXFileReference";
-         path = "RequestUrl.swift";
+         path = "RequestType.swift";
          sourceTree = "<group>";
       };
       "OBJ_54" = {
          isa = "PBXFileReference";
-         path = "Result.swift";
+         path = "RequestUrl.swift";
          sourceTree = "<group>";
       };
       "OBJ_55" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_56"
-         );
-         name = "Utils";
-         path = "Utils";
+         isa = "PBXFileReference";
+         path = "Result.swift";
          sourceTree = "<group>";
       };
       "OBJ_56" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_57",
+            "OBJ_57"
+         );
+         name = "Utils";
+         path = "Utils";
+         sourceTree = "<group>";
+      };
+      "OBJ_57" = {
+         isa = "PBXGroup";
+         children = (
             "OBJ_58",
-            "OBJ_59"
+            "OBJ_59",
+            "OBJ_60"
          );
          name = "Extensions";
          path = "Extensions";
          sourceTree = "<group>";
       };
-      "OBJ_57" = {
+      "OBJ_58" = {
          isa = "PBXFileReference";
          path = "Codable+Utils.swift";
          sourceTree = "<group>";
       };
-      "OBJ_58" = {
-         isa = "PBXFileReference";
-         path = "Data+Debug.swift";
-         sourceTree = "<group>";
-      };
       "OBJ_59" = {
          isa = "PBXFileReference";
-         path = "HTTPResponse+Debug.swift";
+         path = "Data+Debug.swift";
          sourceTree = "<group>";
       };
       "OBJ_6" = {
@@ -1044,68 +1072,36 @@
       };
       "OBJ_60" = {
          isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/networkkit.git-3592815588106199011/Package.swift";
+         path = "HTTPResponse+Debug.swift";
          sourceTree = "<group>";
       };
       "OBJ_61" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/networkkit.git--5964692761013315468/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_62" = {
          isa = "PBXGroup";
          children = (
-            "NetworkKit::NetworkKit::Product",
-            "NetworkKitAlamofire::NetworkKitAlamofireTests::Product",
             "NetworkKitAlamofire::NetworkKitAlamofire::Product",
+            "NetworkKitAlamofire::NetworkKitAlamofireTests::Product",
+            "NetworkKit::NetworkKit::Product",
             "Alamofire::Alamofire::Product"
          );
          name = "Products";
          path = "";
          sourceTree = "BUILT_PRODUCTS_DIR";
       };
-      "OBJ_67" = {
+      "OBJ_68" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_68",
-            "OBJ_69"
+            "OBJ_69",
+            "OBJ_70"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
-      };
-      "OBJ_68" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/Alamofire_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Alamofire";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.0";
-            TARGET_NAME = "Alamofire";
-         };
-         name = "Debug";
       };
       "OBJ_69" = {
          isa = "XCBuildConfiguration";
@@ -1142,7 +1138,7 @@
             SWIFT_VERSION = "4.0";
             TARGET_NAME = "Alamofire";
          };
-         name = "Release";
+         name = "Debug";
       };
       "OBJ_7" = {
          isa = "PBXGroup";
@@ -1154,9 +1150,45 @@
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_70" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/Alamofire_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Alamofire";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Alamofire";
+         };
+         name = "Release";
+      };
+      "OBJ_71" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_71",
             "OBJ_72",
             "OBJ_73",
             "OBJ_74",
@@ -1172,44 +1204,41 @@
             "OBJ_84",
             "OBJ_85",
             "OBJ_86",
-            "OBJ_87"
+            "OBJ_87",
+            "OBJ_88"
          );
-      };
-      "OBJ_71" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
       };
       "OBJ_72" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
+         fileRef = "OBJ_19";
       };
       "OBJ_73" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
+         fileRef = "OBJ_20";
       };
       "OBJ_74" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
+         fileRef = "OBJ_21";
       };
       "OBJ_75" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
+         fileRef = "OBJ_22";
       };
       "OBJ_76" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
+         fileRef = "OBJ_23";
       };
       "OBJ_77" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
+         fileRef = "OBJ_24";
       };
       "OBJ_78" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
+         fileRef = "OBJ_25";
       };
       "OBJ_79" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
+         fileRef = "OBJ_26";
       };
       "OBJ_8" = {
          isa = "PBXGroup";
@@ -1224,37 +1253,41 @@
       };
       "OBJ_80" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
+         fileRef = "OBJ_27";
       };
       "OBJ_81" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
+         fileRef = "OBJ_28";
       };
       "OBJ_82" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
+         fileRef = "OBJ_29";
       };
       "OBJ_83" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
+         fileRef = "OBJ_30";
       };
       "OBJ_84" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
+         fileRef = "OBJ_31";
       };
       "OBJ_85" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
+         fileRef = "OBJ_32";
       };
       "OBJ_86" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_34";
+         fileRef = "OBJ_33";
       };
       "OBJ_87" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
+         fileRef = "OBJ_34";
       };
       "OBJ_88" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_89" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
          );
@@ -1264,32 +1297,14 @@
          path = "HTTPMethod+Alamofire.swift";
          sourceTree = "<group>";
       };
-      "OBJ_90" = {
+      "OBJ_91" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_91",
-            "OBJ_92"
+            "OBJ_92",
+            "OBJ_93"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
-      };
-      "OBJ_91" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.0";
-         };
-         name = "Debug";
       };
       "OBJ_92" = {
          isa = "XCBuildConfiguration";
@@ -1307,63 +1322,44 @@
             );
             SWIFT_VERSION = "4.0";
          };
-         name = "Release";
+         name = "Debug";
       };
       "OBJ_93" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_94"
-         );
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Release";
       };
       "OBJ_94" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_95"
+         );
+      };
+      "OBJ_95" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_18";
       };
-      "OBJ_96" = {
+      "OBJ_97" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_97",
-            "OBJ_98"
+            "OBJ_98",
+            "OBJ_99"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
-      };
-      "OBJ_97" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKit";
-         };
-         name = "Debug";
       };
       "OBJ_98" = {
          isa = "XCBuildConfiguration";
@@ -1400,29 +1396,44 @@
             SWIFT_VERSION = "4.2";
             TARGET_NAME = "NetworkKit";
          };
-         name = "Release";
+         name = "Debug";
       };
       "OBJ_99" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_100",
-            "OBJ_101",
-            "OBJ_102",
-            "OBJ_103",
-            "OBJ_104",
-            "OBJ_105",
-            "OBJ_106",
-            "OBJ_107",
-            "OBJ_108",
-            "OBJ_109",
-            "OBJ_110",
-            "OBJ_111",
-            "OBJ_112",
-            "OBJ_113",
-            "OBJ_114",
-            "OBJ_115",
-            "OBJ_116"
-         );
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "NetworkKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "NetworkKit";
+         };
+         name = "Release";
       };
    };
    rootObject = "OBJ_1";

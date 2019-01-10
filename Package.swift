@@ -12,7 +12,7 @@ let package = Package(
             targets: ["NetworkKitAlamofire"]),
     ],
     dependencies: [
-		.package(url: "https://github.com/buscarini/networkkit.git", from: "0.1.7"),
+		.package(url: "https://github.com/buscarini/networkkit.git", .branch("Multiple_parameter_sets")),
 		.package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.8.0")
     ],
     targets: [

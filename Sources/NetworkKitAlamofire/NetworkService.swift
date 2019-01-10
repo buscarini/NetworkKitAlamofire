@@ -17,7 +17,11 @@ public extension NetworkService {
     	completion: @escaping (NetworkKit.NetworkResponse<Data?>) -> Void
 	) -> NetworkService.CancelRequest {
         
-        let finalUrl = request.fullUrl(baseUrl: baseUrl)
+        let totalUrl = request.fullUrl(baseUrl: baseUrl)
+		
+		var components = URLComponents(url: totalUrl, resolvingAgainstBaseURL: false)
+		components?.queryItems = request.extraQueryItems
+		let finalUrl = components?.url ?? totalUrl
         
         switch request.type {
         case .request(let parameters, let parametersEncoding):
@@ -61,7 +65,7 @@ public extension NetworkService {
         let encodingAlamofire = parametersEncoding.alamofire
         let methodAlamofire = method.alamofire
         let successCodesArray = Array(successCodes.lowerBound ..< successCodes.upperBound)
-        
+		
         let dataRequest = Alamofire
             .request(
                 url,
