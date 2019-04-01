@@ -1,1451 +1,1052 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      "Alamofire::Alamofire" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_69";
-         buildPhases = (
-            "OBJ_72",
-            "OBJ_90"
-         );
-         dependencies = (
-         );
-         name = "Alamofire";
-         productName = "Alamofire";
-         productReference = "Alamofire::Alamofire::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "Alamofire::Alamofire::Product" = {
-         isa = "PBXFileReference";
-         path = "Alamofire.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "Alamofire::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_92";
-         buildPhases = (
-            "OBJ_95"
-         );
-         dependencies = (
-         );
-         name = "AlamofirePackageDescription";
-         productName = "AlamofirePackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "NetworkKit::NetworkKit" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_98";
-         buildPhases = (
-            "OBJ_101",
-            "OBJ_120"
-         );
-         dependencies = (
-         );
-         name = "NetworkKit";
-         productName = "NetworkKit";
-         productReference = "NetworkKit::NetworkKit::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "NetworkKit::NetworkKit::Product" = {
-         isa = "PBXFileReference";
-         path = "NetworkKit.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "NetworkKit::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_160";
-         buildPhases = (
-            "OBJ_163"
-         );
-         dependencies = (
-         );
-         name = "NetworkKitPackageDescription";
-         productName = "NetworkKitPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "NetworkKitAlamofire::NetworkKitAlamofire" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_122";
-         buildPhases = (
-            "OBJ_125",
-            "OBJ_130"
-         );
-         dependencies = (
-            "OBJ_133",
-            "OBJ_134"
-         );
-         name = "NetworkKitAlamofire";
-         productName = "NetworkKitAlamofire";
-         productReference = "NetworkKitAlamofire::NetworkKitAlamofire::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "NetworkKitAlamofire::NetworkKitAlamofire::Product" = {
-         isa = "PBXFileReference";
-         path = "NetworkKitAlamofire.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "NetworkKitAlamofire::NetworkKitAlamofirePackageTests::ProductTarget" = {
-         isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_142";
-         buildPhases = (
-         );
-         dependencies = (
-            "OBJ_145"
-         );
-         name = "NetworkKitAlamofirePackageTests";
-         productName = "NetworkKitAlamofirePackageTests";
-      };
-      "NetworkKitAlamofire::NetworkKitAlamofireTests" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_147";
-         buildPhases = (
-            "OBJ_150",
-            "OBJ_152"
-         );
-         dependencies = (
-            "OBJ_156",
-            "OBJ_157",
-            "OBJ_158"
-         );
-         name = "NetworkKitAlamofireTests";
-         productName = "NetworkKitAlamofireTests";
-         productReference = "NetworkKitAlamofire::NetworkKitAlamofireTests::Product";
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      "NetworkKitAlamofire::NetworkKitAlamofireTests::Product" = {
-         isa = "PBXFileReference";
-         path = "NetworkKitAlamofireTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "NetworkKitAlamofire::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_136";
-         buildPhases = (
-            "OBJ_139"
-         );
-         dependencies = (
-         );
-         name = "NetworkKitAlamofirePackageDescription";
-         productName = "NetworkKitAlamofirePackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "OBJ_1" = {
-         isa = "PBXProject";
-         attributes = {
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = "OBJ_2";
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "English";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en"
-         );
-         mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_63";
-         projectDirPath = ".";
-         targets = (
-            "Alamofire::Alamofire",
-            "Alamofire::SwiftPMPackageDescription",
-            "NetworkKit::NetworkKit",
-            "NetworkKitAlamofire::NetworkKitAlamofire",
-            "NetworkKitAlamofire::SwiftPMPackageDescription",
-            "NetworkKitAlamofire::NetworkKitAlamofirePackageTests::ProductTarget",
-            "NetworkKitAlamofire::NetworkKitAlamofireTests",
-            "NetworkKit::SwiftPMPackageDescription"
-         );
-      };
-      "OBJ_10" = {
-         isa = "PBXFileReference";
-         path = "HTTPMethod+Alamofire.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_100" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKit";
-         };
-         name = "Release";
-      };
-      "OBJ_101" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_102",
-            "OBJ_103",
-            "OBJ_104",
-            "OBJ_105",
-            "OBJ_106",
-            "OBJ_107",
-            "OBJ_108",
-            "OBJ_109",
-            "OBJ_110",
-            "OBJ_111",
-            "OBJ_112",
-            "OBJ_113",
-            "OBJ_114",
-            "OBJ_115",
-            "OBJ_116",
-            "OBJ_117",
-            "OBJ_118",
-            "OBJ_119"
-         );
-      };
-      "OBJ_102" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_42";
-      };
-      "OBJ_103" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_43";
-      };
-      "OBJ_104" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_44";
-      };
-      "OBJ_105" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_45";
-      };
-      "OBJ_106" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_46";
-      };
-      "OBJ_107" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_47";
-      };
-      "OBJ_108" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_48";
-      };
-      "OBJ_109" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_49";
-      };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "NetworkService.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_110" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_50";
-      };
-      "OBJ_111" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_51";
-      };
-      "OBJ_112" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_52";
-      };
-      "OBJ_113" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_53";
-      };
-      "OBJ_114" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_54";
-      };
-      "OBJ_115" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_55";
-      };
-      "OBJ_116" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_56";
-      };
-      "OBJ_117" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_59";
-      };
-      "OBJ_118" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_60";
-      };
-      "OBJ_119" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_61";
-      };
-      "OBJ_12" = {
-         isa = "PBXFileReference";
-         path = "ParametersEncoding+Alamofire.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_120" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_122" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_123",
-            "OBJ_124"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_123" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKitAlamofire_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkKitAlamofire";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKitAlamofire";
-         };
-         name = "Debug";
-      };
-      "OBJ_124" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKitAlamofire_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkKitAlamofire";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKitAlamofire";
-         };
-         name = "Release";
-      };
-      "OBJ_125" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_126",
-            "OBJ_127",
-            "OBJ_128",
-            "OBJ_129"
-         );
-      };
-      "OBJ_126" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_9";
-      };
-      "OBJ_127" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
-      };
-      "OBJ_128" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
-      };
-      "OBJ_129" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
-      };
-      "OBJ_13" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_14"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_130" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_131",
-            "OBJ_132"
-         );
-      };
-      "OBJ_131" = {
-         isa = "PBXBuildFile";
-         fileRef = "Alamofire::Alamofire::Product";
-      };
-      "OBJ_132" = {
-         isa = "PBXBuildFile";
-         fileRef = "NetworkKit::NetworkKit::Product";
-      };
-      "OBJ_133" = {
-         isa = "PBXTargetDependency";
-         target = "Alamofire::Alamofire";
-      };
-      "OBJ_134" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkKit::NetworkKit";
-      };
-      "OBJ_136" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_137",
-            "OBJ_138"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_137" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.2";
-         };
-         name = "Debug";
-      };
-      "OBJ_138" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.2";
-         };
-         name = "Release";
-      };
-      "OBJ_139" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_140"
-         );
-      };
-      "OBJ_14" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_15"
-         );
-         name = "NetworkKitAlamofireTests";
-         path = "Tests/NetworkKitAlamofireTests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_140" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
-      };
-      "OBJ_142" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_143",
-            "OBJ_144"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_143" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_144" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_145" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkKitAlamofire::NetworkKitAlamofireTests";
-      };
-      "OBJ_147" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_148",
-            "OBJ_149"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_148" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKitAlamofireTests_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKitAlamofireTests";
-         };
-         name = "Debug";
-      };
-      "OBJ_149" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKitAlamofireTests_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKitAlamofireTests";
-         };
-         name = "Release";
-      };
-      "OBJ_15" = {
-         isa = "PBXFileReference";
-         path = "NetworkKitAlamofireTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_150" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_151"
-         );
-      };
-      "OBJ_151" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
-      };
-      "OBJ_152" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_153",
-            "OBJ_154",
-            "OBJ_155"
-         );
-      };
-      "OBJ_153" = {
-         isa = "PBXBuildFile";
-         fileRef = "NetworkKitAlamofire::NetworkKitAlamofire::Product";
-      };
-      "OBJ_154" = {
-         isa = "PBXBuildFile";
-         fileRef = "Alamofire::Alamofire::Product";
-      };
-      "OBJ_155" = {
-         isa = "PBXBuildFile";
-         fileRef = "NetworkKit::NetworkKit::Product";
-      };
-      "OBJ_156" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkKitAlamofire::NetworkKitAlamofire";
-      };
-      "OBJ_157" = {
-         isa = "PBXTargetDependency";
-         target = "Alamofire::Alamofire";
-      };
-      "OBJ_158" = {
-         isa = "PBXTargetDependency";
-         target = "NetworkKit::NetworkKit";
-      };
-      "OBJ_16" = {
-         isa = "PBXFileReference";
-         path = "Configs";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_160" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_161",
-            "OBJ_162"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_161" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.2";
-         };
-         name = "Debug";
-      };
-      "OBJ_162" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.2";
-         };
-         name = "Release";
-      };
-      "OBJ_163" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_164"
-         );
-      };
-      "OBJ_164" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_62";
-      };
-      "OBJ_17" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_18",
-            "OBJ_37"
-         );
-         name = "Dependencies";
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_18" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_19",
-            "OBJ_20",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_24",
-            "OBJ_25",
-            "OBJ_26",
-            "OBJ_27",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33",
-            "OBJ_34",
-            "OBJ_35",
-            "OBJ_36"
-         );
-         name = "Alamofire 4.8.0";
-         path = ".build/checkouts/Alamofire.git--5466590297036344884/Source";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/Alamofire.git--5466590297036344884/Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_2" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_3",
-            "OBJ_4"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_20" = {
-         isa = "PBXFileReference";
-         path = "AFError.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "Alamofire.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "DispatchQueue+Alamofire.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "MultipartFormData.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_24" = {
-         isa = "PBXFileReference";
-         path = "NetworkReachabilityManager.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_25" = {
-         isa = "PBXFileReference";
-         path = "Notifications.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_26" = {
-         isa = "PBXFileReference";
-         path = "ParameterEncoding.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "Request.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_28" = {
-         isa = "PBXFileReference";
-         path = "Response.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_29" = {
-         isa = "PBXFileReference";
-         path = "ResponseSerialization.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_3" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "DEBUG=1",
-               "$(inherited)"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "SWIFT_PACKAGE",
-               "DEBUG"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      "OBJ_30" = {
-         isa = "PBXFileReference";
-         path = "Result.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_31" = {
-         isa = "PBXFileReference";
-         path = "ServerTrustPolicy.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "SessionDelegate.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
-         path = "SessionManager.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_34" = {
-         isa = "PBXFileReference";
-         path = "TaskDelegate.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_35" = {
-         isa = "PBXFileReference";
-         path = "Timeline.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_36" = {
-         isa = "PBXFileReference";
-         path = "Validation.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_37" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_38",
-            "OBJ_62"
-         );
-         name = "NetworkKit";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_38" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_39"
-         );
-         name = "NetworkKit";
-         path = ".build/checkouts/networkkit.git--5964692761013315468/Sources/NetworkKit";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_39" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_40",
-            "OBJ_57"
-         );
-         name = "Models";
-         path = "Models";
-         sourceTree = "<group>";
-      };
-      "OBJ_4" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "SWIFT_PACKAGE"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      "OBJ_40" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_41",
-            "OBJ_43",
-            "OBJ_44",
-            "OBJ_45",
-            "OBJ_46",
-            "OBJ_47",
-            "OBJ_48",
-            "OBJ_49",
-            "OBJ_50",
-            "OBJ_51",
-            "OBJ_52",
-            "OBJ_53",
-            "OBJ_54",
-            "OBJ_55",
-            "OBJ_56"
-         );
-         name = "Structure";
-         path = "Structure";
-         sourceTree = "<group>";
-      };
-      "OBJ_41" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_42"
-         );
-         name = "Errors";
-         path = "Errors";
-         sourceTree = "<group>";
-      };
-      "OBJ_42" = {
-         isa = "PBXFileReference";
-         path = "ResponseError.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_43" = {
-         isa = "PBXFileReference";
-         path = "HTTPMethod.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_44" = {
-         isa = "PBXFileReference";
-         path = "HTTPResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_45" = {
-         isa = "PBXFileReference";
-         path = "MultipartFileParameter.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_46" = {
-         isa = "PBXFileReference";
-         path = "MultipartParameter.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_47" = {
-         isa = "PBXFileReference";
-         path = "NetworkResponse.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_48" = {
-         isa = "PBXFileReference";
-         path = "NetworkService+Utils.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_49" = {
-         isa = "PBXFileReference";
-         path = "NetworkService.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_13",
-            "OBJ_16",
-            "OBJ_17",
-            "OBJ_63"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_50" = {
-         isa = "PBXFileReference";
-         path = "ParametersEncoding.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_51" = {
-         isa = "PBXFileReference";
-         path = "Request+Constants.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_52" = {
-         isa = "PBXFileReference";
-         path = "Request+Utils.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_53" = {
-         isa = "PBXFileReference";
-         path = "Request.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_54" = {
-         isa = "PBXFileReference";
-         path = "RequestType.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_55" = {
-         isa = "PBXFileReference";
-         path = "RequestUrl.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_56" = {
-         isa = "PBXFileReference";
-         path = "Result.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_57" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_58"
-         );
-         name = "Utils";
-         path = "Utils";
-         sourceTree = "<group>";
-      };
-      "OBJ_58" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_59",
-            "OBJ_60",
-            "OBJ_61"
-         );
-         name = "Extensions";
-         path = "Extensions";
-         sourceTree = "<group>";
-      };
-      "OBJ_59" = {
-         isa = "PBXFileReference";
-         path = "Codable+Utils.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_6" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_60" = {
-         isa = "PBXFileReference";
-         path = "Data+Debug.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_61" = {
-         isa = "PBXFileReference";
-         path = "HTTPResponse+Debug.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_62" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/networkkit.git--5964692761013315468/Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_63" = {
-         isa = "PBXGroup";
-         children = (
-            "Alamofire::Alamofire::Product",
-            "NetworkKitAlamofire::NetworkKitAlamofireTests::Product",
-            "NetworkKitAlamofire::NetworkKitAlamofire::Product",
-            "NetworkKit::NetworkKit::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "OBJ_69" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_70",
-            "OBJ_71"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_7" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_8"
-         );
-         name = "Sources";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_70" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/Alamofire_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Alamofire";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.0";
-            TARGET_NAME = "Alamofire";
-         };
-         name = "Debug";
-      };
-      "OBJ_71" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/Alamofire_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Alamofire";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.0";
-            TARGET_NAME = "Alamofire";
-         };
-         name = "Release";
-      };
-      "OBJ_72" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_73",
-            "OBJ_74",
-            "OBJ_75",
-            "OBJ_76",
-            "OBJ_77",
-            "OBJ_78",
-            "OBJ_79",
-            "OBJ_80",
-            "OBJ_81",
-            "OBJ_82",
-            "OBJ_83",
-            "OBJ_84",
-            "OBJ_85",
-            "OBJ_86",
-            "OBJ_87",
-            "OBJ_88",
-            "OBJ_89"
-         );
-      };
-      "OBJ_73" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_74" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
-      };
-      "OBJ_75" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_76" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_77" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_78" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
-      };
-      "OBJ_79" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
-      };
-      "OBJ_8" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_9",
-            "OBJ_10",
-            "OBJ_11",
-            "OBJ_12"
-         );
-         name = "NetworkKitAlamofire";
-         path = "Sources/NetworkKitAlamofire";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_80" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
-      };
-      "OBJ_81" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
-      };
-      "OBJ_82" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
-      };
-      "OBJ_83" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
-      };
-      "OBJ_84" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
-      };
-      "OBJ_85" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
-      };
-      "OBJ_86" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
-      };
-      "OBJ_87" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_34";
-      };
-      "OBJ_88" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
-      };
-      "OBJ_89" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
-      };
-      "OBJ_9" = {
-         isa = "PBXFileReference";
-         path = "CustomEncoding.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_90" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_92" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_93",
-            "OBJ_94"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_93" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_94" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "4.0";
-         };
-         name = "Release";
-      };
-      "OBJ_95" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_96"
-         );
-      };
-      "OBJ_96" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_98" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_99",
-            "OBJ_100"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_99" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "NetworkKitAlamofire.xcodeproj/NetworkKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "NetworkKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "NetworkKit";
-         };
-         name = "Debug";
-      };
-   };
-   rootObject = "OBJ_1";
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"NetworkKitAlamofire::NetworkKitAlamofirePackageTests::ProductTarget" /* NetworkKitAlamofirePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_145 /* Build configuration list for PBXAggregateTarget "NetworkKitAlamofirePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_148 /* PBXTargetDependency */,
+			);
+			name = NetworkKitAlamofirePackageTests;
+			productName = NetworkKitAlamofirePackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_105 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* ResponseError.swift */; };
+		OBJ_106 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* HTTPMethod.swift */; };
+		OBJ_107 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* HTTPResponse.swift */; };
+		OBJ_108 /* MultipartFileParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* MultipartFileParameter.swift */; };
+		OBJ_109 /* MultipartParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* MultipartParameter.swift */; };
+		OBJ_110 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* NetworkResponse.swift */; };
+		OBJ_111 /* NetworkService+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* NetworkService+Utils.swift */; };
+		OBJ_112 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* NetworkService.swift */; };
+		OBJ_113 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ParametersEncoding.swift */; };
+		OBJ_114 /* Request+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Request+Constants.swift */; };
+		OBJ_115 /* Request+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Request+Utils.swift */; };
+		OBJ_116 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Request.swift */; };
+		OBJ_117 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* RequestType.swift */; };
+		OBJ_118 /* RequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* RequestUrl.swift */; };
+		OBJ_119 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Result.swift */; };
+		OBJ_120 /* Codable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Codable+Utils.swift */; };
+		OBJ_121 /* Data+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Data+Debug.swift */; };
+		OBJ_122 /* HTTPResponse+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* HTTPResponse+Debug.swift */; };
+		OBJ_129 /* CustomEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CustomEncoding.swift */; };
+		OBJ_130 /* HTTPMethod+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* HTTPMethod+Alamofire.swift */; };
+		OBJ_131 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* NetworkService.swift */; };
+		OBJ_132 /* ParametersEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ParametersEncoding+Alamofire.swift */; };
+		OBJ_134 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_135 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkKit::NetworkKit::Product" /* NetworkKit.framework */; };
+		OBJ_143 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_154 /* NetworkKitAlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* NetworkKitAlamofireTests.swift */; };
+		OBJ_156 /* NetworkKitAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkKitAlamofire::NetworkKitAlamofire::Product" /* NetworkKitAlamofire.framework */; };
+		OBJ_157 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_158 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkKit::NetworkKit::Product" /* NetworkKit.framework */; };
+		OBJ_167 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Package.swift */; };
+		OBJ_76 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* AFError.swift */; };
+		OBJ_77 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Alamofire.swift */; };
+		OBJ_78 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_79 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MultipartFormData.swift */; };
+		OBJ_80 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* NetworkReachabilityManager.swift */; };
+		OBJ_81 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Notifications.swift */; };
+		OBJ_82 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* ParameterEncoding.swift */; };
+		OBJ_83 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Request.swift */; };
+		OBJ_84 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Response.swift */; };
+		OBJ_85 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ResponseSerialization.swift */; };
+		OBJ_86 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Result.swift */; };
+		OBJ_87 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ServerTrustPolicy.swift */; };
+		OBJ_88 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* SessionDelegate.swift */; };
+		OBJ_89 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* SessionManager.swift */; };
+		OBJ_90 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* TaskDelegate.swift */; };
+		OBJ_91 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Timeline.swift */; };
+		OBJ_92 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Validation.swift */; };
+		OBJ_99 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACE8F14922524ABA00C2EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		ACE8F14A22524ABA00C2EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetworkKit::NetworkKit";
+			remoteInfo = NetworkKit;
+		};
+		ACE8F14B22524ABA00C2EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetworkKitAlamofire::NetworkKitAlamofire";
+			remoteInfo = NetworkKitAlamofire;
+		};
+		ACE8F14C22524ABA00C2EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		ACE8F14D22524ABA00C2EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "NetworkKit::NetworkKit";
+			remoteInfo = NetworkKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NetworkKit::NetworkKit::Product" /* NetworkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NetworkKitAlamofire::NetworkKitAlamofire::Product" /* NetworkKitAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkKitAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NetworkKitAlamofire::NetworkKitAlamofireTests::Product" /* NetworkKitAlamofireTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NetworkKitAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* HTTPMethod+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMethod+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ParametersEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParametersEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* NetworkKitAlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKitAlamofireTests.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/Alamofire/Package.swift; sourceTree = "<group>"; };
+		OBJ_19 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_21 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_23 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_25 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_30 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		OBJ_31 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_32 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		OBJ_33 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_41 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		OBJ_42 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		OBJ_43 /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		OBJ_44 /* MultipartFileParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFileParameter.swift; sourceTree = "<group>"; };
+		OBJ_45 /* MultipartParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartParameter.swift; sourceTree = "<group>"; };
+		OBJ_46 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		OBJ_47 /* NetworkService+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Utils.swift"; sourceTree = "<group>"; };
+		OBJ_48 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		OBJ_49 /* ParametersEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Request+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Constants.swift"; sourceTree = "<group>"; };
+		OBJ_51 /* Request+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Utils.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_53 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		OBJ_54 /* RequestUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUrl.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_58 /* Codable+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Utils.swift"; sourceTree = "<group>"; };
+		OBJ_59 /* Data+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Debug.swift"; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* HTTPResponse+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPResponse+Debug.swift"; sourceTree = "<group>"; };
+		OBJ_61 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/networkkit/Package.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Configs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configs; sourceTree = SOURCE_ROOT; };
+		OBJ_68 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_69 /* NetworkKitAlamofire.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkKitAlamofire.podspec; sourceTree = "<group>"; };
+		OBJ_70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_9 /* CustomEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEncoding.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_134 /* Alamofire.framework in Frameworks */,
+				OBJ_135 /* NetworkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_156 /* NetworkKitAlamofire.framework in Frameworks */,
+				OBJ_157 /* Alamofire.framework in Frameworks */,
+				OBJ_158 /* NetworkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_13 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* NetworkKitAlamofireTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* NetworkKitAlamofireTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* NetworkKitAlamofireTests.swift */,
+			);
+			name = NetworkKitAlamofireTests;
+			path = Tests/NetworkKitAlamofireTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* Alamofire 4.8.2 */,
+				OBJ_36 /* NetworkKit 0.2.0 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* Alamofire 4.8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* Package.swift */,
+				OBJ_19 /* AFError.swift */,
+				OBJ_20 /* Alamofire.swift */,
+				OBJ_21 /* DispatchQueue+Alamofire.swift */,
+				OBJ_22 /* MultipartFormData.swift */,
+				OBJ_23 /* NetworkReachabilityManager.swift */,
+				OBJ_24 /* Notifications.swift */,
+				OBJ_25 /* ParameterEncoding.swift */,
+				OBJ_26 /* Request.swift */,
+				OBJ_27 /* Response.swift */,
+				OBJ_28 /* ResponseSerialization.swift */,
+				OBJ_29 /* Result.swift */,
+				OBJ_30 /* ServerTrustPolicy.swift */,
+				OBJ_31 /* SessionDelegate.swift */,
+				OBJ_32 /* SessionManager.swift */,
+				OBJ_33 /* TaskDelegate.swift */,
+				OBJ_34 /* Timeline.swift */,
+				OBJ_35 /* Validation.swift */,
+			);
+			name = "Alamofire 4.8.2";
+			path = .build/checkouts/Alamofire/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_36 /* NetworkKit 0.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* NetworkKit */,
+				OBJ_61 /* Package.swift */,
+			);
+			name = "NetworkKit 0.2.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_37 /* NetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* Models */,
+			);
+			name = NetworkKit;
+			path = .build/checkouts/networkkit/Sources/NetworkKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* Structure */,
+				OBJ_56 /* Utils */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_39 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* Errors */,
+				OBJ_42 /* HTTPMethod.swift */,
+				OBJ_43 /* HTTPResponse.swift */,
+				OBJ_44 /* MultipartFileParameter.swift */,
+				OBJ_45 /* MultipartParameter.swift */,
+				OBJ_46 /* NetworkResponse.swift */,
+				OBJ_47 /* NetworkService+Utils.swift */,
+				OBJ_48 /* NetworkService.swift */,
+				OBJ_49 /* ParametersEncoding.swift */,
+				OBJ_50 /* Request+Constants.swift */,
+				OBJ_51 /* Request+Utils.swift */,
+				OBJ_52 /* Request.swift */,
+				OBJ_53 /* RequestType.swift */,
+				OBJ_54 /* RequestUrl.swift */,
+				OBJ_55 /* Result.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* ResponseError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_13 /* Tests */,
+				OBJ_16 /* Dependencies */,
+				OBJ_62 /* Products */,
+				OBJ_67 /* Configs */,
+				OBJ_68 /* LICENSE */,
+				OBJ_69 /* NetworkKitAlamofire.podspec */,
+				OBJ_70 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_56 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_57 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		OBJ_57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_58 /* Codable+Utils.swift */,
+				OBJ_59 /* Data+Debug.swift */,
+				OBJ_60 /* HTTPResponse+Debug.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"NetworkKit::NetworkKit::Product" /* NetworkKit.framework */,
+				"NetworkKitAlamofire::NetworkKitAlamofireTests::Product" /* NetworkKitAlamofireTests.xctest */,
+				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
+				"NetworkKitAlamofire::NetworkKitAlamofire::Product" /* NetworkKitAlamofire.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* NetworkKitAlamofire */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* NetworkKitAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* CustomEncoding.swift */,
+				OBJ_10 /* HTTPMethod+Alamofire.swift */,
+				OBJ_11 /* NetworkService.swift */,
+				OBJ_12 /* ParametersEncoding+Alamofire.swift */,
+			);
+			name = NetworkKitAlamofire;
+			path = Sources/NetworkKitAlamofire;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Alamofire::Alamofire" /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_72 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				OBJ_75 /* Sources */,
+				OBJ_93 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildPhases = (
+				OBJ_98 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamofirePackageDescription;
+			productName = AlamofirePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"NetworkKit::NetworkKit" /* NetworkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_101 /* Build configuration list for PBXNativeTarget "NetworkKit" */;
+			buildPhases = (
+				OBJ_104 /* Sources */,
+				OBJ_123 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkKit;
+			productName = NetworkKit;
+			productReference = "NetworkKit::NetworkKit::Product" /* NetworkKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"NetworkKit::SwiftPMPackageDescription" /* NetworkKitPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_163 /* Build configuration list for PBXNativeTarget "NetworkKitPackageDescription" */;
+			buildPhases = (
+				OBJ_166 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkKitPackageDescription;
+			productName = NetworkKitPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"NetworkKitAlamofire::NetworkKitAlamofire" /* NetworkKitAlamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_125 /* Build configuration list for PBXNativeTarget "NetworkKitAlamofire" */;
+			buildPhases = (
+				OBJ_128 /* Sources */,
+				OBJ_133 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_136 /* PBXTargetDependency */,
+				OBJ_137 /* PBXTargetDependency */,
+			);
+			name = NetworkKitAlamofire;
+			productName = NetworkKitAlamofire;
+			productReference = "NetworkKitAlamofire::NetworkKitAlamofire::Product" /* NetworkKitAlamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"NetworkKitAlamofire::NetworkKitAlamofireTests" /* NetworkKitAlamofireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_150 /* Build configuration list for PBXNativeTarget "NetworkKitAlamofireTests" */;
+			buildPhases = (
+				OBJ_153 /* Sources */,
+				OBJ_155 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_159 /* PBXTargetDependency */,
+				OBJ_160 /* PBXTargetDependency */,
+				OBJ_161 /* PBXTargetDependency */,
+			);
+			name = NetworkKitAlamofireTests;
+			productName = NetworkKitAlamofireTests;
+			productReference = "NetworkKitAlamofire::NetworkKitAlamofireTests::Product" /* NetworkKitAlamofireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"NetworkKitAlamofire::SwiftPMPackageDescription" /* NetworkKitAlamofirePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_139 /* Build configuration list for PBXNativeTarget "NetworkKitAlamofirePackageDescription" */;
+			buildPhases = (
+				OBJ_142 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkKitAlamofirePackageDescription;
+			productName = NetworkKitAlamofirePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "NetworkKitAlamofire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Alamofire::Alamofire" /* Alamofire */,
+				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
+				"NetworkKit::NetworkKit" /* NetworkKit */,
+				"NetworkKitAlamofire::NetworkKitAlamofire" /* NetworkKitAlamofire */,
+				"NetworkKitAlamofire::SwiftPMPackageDescription" /* NetworkKitAlamofirePackageDescription */,
+				"NetworkKitAlamofire::NetworkKitAlamofirePackageTests::ProductTarget" /* NetworkKitAlamofirePackageTests */,
+				"NetworkKitAlamofire::NetworkKitAlamofireTests" /* NetworkKitAlamofireTests */,
+				"NetworkKit::SwiftPMPackageDescription" /* NetworkKitPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_105 /* ResponseError.swift in Sources */,
+				OBJ_106 /* HTTPMethod.swift in Sources */,
+				OBJ_107 /* HTTPResponse.swift in Sources */,
+				OBJ_108 /* MultipartFileParameter.swift in Sources */,
+				OBJ_109 /* MultipartParameter.swift in Sources */,
+				OBJ_110 /* NetworkResponse.swift in Sources */,
+				OBJ_111 /* NetworkService+Utils.swift in Sources */,
+				OBJ_112 /* NetworkService.swift in Sources */,
+				OBJ_113 /* ParametersEncoding.swift in Sources */,
+				OBJ_114 /* Request+Constants.swift in Sources */,
+				OBJ_115 /* Request+Utils.swift in Sources */,
+				OBJ_116 /* Request.swift in Sources */,
+				OBJ_117 /* RequestType.swift in Sources */,
+				OBJ_118 /* RequestUrl.swift in Sources */,
+				OBJ_119 /* Result.swift in Sources */,
+				OBJ_120 /* Codable+Utils.swift in Sources */,
+				OBJ_121 /* Data+Debug.swift in Sources */,
+				OBJ_122 /* HTTPResponse+Debug.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_129 /* CustomEncoding.swift in Sources */,
+				OBJ_130 /* HTTPMethod+Alamofire.swift in Sources */,
+				OBJ_131 /* NetworkService.swift in Sources */,
+				OBJ_132 /* ParametersEncoding+Alamofire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_143 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_154 /* NetworkKitAlamofireTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_167 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_76 /* AFError.swift in Sources */,
+				OBJ_77 /* Alamofire.swift in Sources */,
+				OBJ_78 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_79 /* MultipartFormData.swift in Sources */,
+				OBJ_80 /* NetworkReachabilityManager.swift in Sources */,
+				OBJ_81 /* Notifications.swift in Sources */,
+				OBJ_82 /* ParameterEncoding.swift in Sources */,
+				OBJ_83 /* Request.swift in Sources */,
+				OBJ_84 /* Response.swift in Sources */,
+				OBJ_85 /* ResponseSerialization.swift in Sources */,
+				OBJ_86 /* Result.swift in Sources */,
+				OBJ_87 /* ServerTrustPolicy.swift in Sources */,
+				OBJ_88 /* SessionDelegate.swift in Sources */,
+				OBJ_89 /* SessionManager.swift in Sources */,
+				OBJ_90 /* TaskDelegate.swift in Sources */,
+				OBJ_91 /* Timeline.swift in Sources */,
+				OBJ_92 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_99 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = ACE8F14922524ABA00C2EFE8 /* PBXContainerItemProxy */;
+		};
+		OBJ_137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NetworkKit::NetworkKit" /* NetworkKit */;
+			targetProxy = ACE8F14A22524ABA00C2EFE8 /* PBXContainerItemProxy */;
+		};
+		OBJ_148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NetworkKitAlamofire::NetworkKitAlamofireTests" /* NetworkKitAlamofireTests */;
+			targetProxy = "NetworkKitAlamofire::NetworkKitAlamofireTests" /* NetworkKitAlamofireTests */;
+		};
+		OBJ_159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NetworkKitAlamofire::NetworkKitAlamofire" /* NetworkKitAlamofire */;
+			targetProxy = ACE8F14B22524ABA00C2EFE8 /* PBXContainerItemProxy */;
+		};
+		OBJ_160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = ACE8F14C22524ABA00C2EFE8 /* PBXContainerItemProxy */;
+		};
+		OBJ_161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NetworkKit::NetworkKit" /* NetworkKit */;
+			targetProxy = ACE8F14D22524ABA00C2EFE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/NetworkKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NetworkKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/NetworkKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NetworkKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/NetworkKitAlamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkKitAlamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = NetworkKitAlamofire;
+			};
+			name = Debug;
+		};
+		OBJ_127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/NetworkKitAlamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkKitAlamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = NetworkKitAlamofire;
+			};
+			name = Release;
+		};
+		OBJ_140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/NetworkKitAlamofireTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = NetworkKitAlamofireTests;
+			};
+			name = Debug;
+		};
+		OBJ_152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/NetworkKitAlamofireTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = NetworkKitAlamofireTests;
+			};
+			name = Release;
+		};
+		OBJ_164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Debug;
+		};
+		OBJ_74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NetworkKitAlamofire.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Release;
+		};
+		OBJ_96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_101 /* Build configuration list for PBXNativeTarget "NetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_102 /* Debug */,
+				OBJ_103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_125 /* Build configuration list for PBXNativeTarget "NetworkKitAlamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_126 /* Debug */,
+				OBJ_127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_139 /* Build configuration list for PBXNativeTarget "NetworkKitAlamofirePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_140 /* Debug */,
+				OBJ_141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_145 /* Build configuration list for PBXAggregateTarget "NetworkKitAlamofirePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_146 /* Debug */,
+				OBJ_147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_150 /* Build configuration list for PBXNativeTarget "NetworkKitAlamofireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_151 /* Debug */,
+				OBJ_152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_163 /* Build configuration list for PBXNativeTarget "NetworkKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_164 /* Debug */,
+				OBJ_165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "NetworkKitAlamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_72 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_73 /* Debug */,
+				OBJ_74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_95 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_96 /* Debug */,
+				OBJ_97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }

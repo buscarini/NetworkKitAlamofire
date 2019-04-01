@@ -12,8 +12,8 @@ let package = Package(
             targets: ["NetworkKitAlamofire"]),
     ],
     dependencies: [
-		.package(url: "https://github.com/buscarini/networkkit.git", .branch("Multiple_parameter_sets")),
-		.package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.8.0")
+		.package(url: "https://github.com/buscarini/networkkit.git", from: "0.2.0"),
+		.package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.8.2")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

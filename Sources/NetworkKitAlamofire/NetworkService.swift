@@ -6,18 +6,18 @@ import Alamofire
 public extension NetworkService {
 	private static var lastManager: SessionManager?
 	
-	public static var defaultConfig: URLSessionConfiguration {
+	static var defaultConfig: URLSessionConfiguration {
 		let configuration = URLSessionConfiguration.default
 		configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
 		return configuration
 	}
 	
-	public static func alamofire(_ baseUrl: URL, _ sessionConfig: URLSessionConfiguration = NetworkService.defaultConfig) -> NetworkService {
+	static func alamofire(_ baseUrl: URL, _ sessionConfig: URLSessionConfiguration = NetworkService.defaultConfig) -> NetworkService {
 		return NetworkService.init(baseUrl: baseUrl, request: self.alamofireRequest(sessionConfig))
 	}
 	
 	@discardableResult
-	public static func alamofireRequest(_ sessionConfig: URLSessionConfiguration) -> (
+	static func alamofireRequest(_ sessionConfig: URLSessionConfiguration) -> (
 		URL,
 		NetworkKit.Request<Data>,
 		@escaping NetworkService.Log,

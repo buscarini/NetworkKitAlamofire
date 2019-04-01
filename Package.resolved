@@ -6,17 +6,17 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "32573d05b91d8b7349ca31b4726e80212483f02a",
-          "version": "4.8.0"
+          "revision": "75bba56748359f297a83f620d45f72cf4ebee4e7",
+          "version": "4.8.2"
         }
       },
       {
         "package": "NetworkKit",
         "repositoryURL": "https://github.com/buscarini/networkkit.git",
         "state": {
-          "branch": "Multiple_parameter_sets",
-          "revision": "9ee03d50a2d805e3386a58123cdea6e6e34b59d8",
-          "version": null
+          "branch": null,
+          "revision": "3e6a37255c9fea36fdd9ac612e3c4221bc0dc8c2",
+          "version": "0.2.0"
         }
       }
     ]
