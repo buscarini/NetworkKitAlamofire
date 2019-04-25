@@ -28,7 +28,8 @@ public extension NetworkService {
 				let totalUrl = request.fullUrl(baseUrl: baseUrl)
 				
 				var components = URLComponents(url: totalUrl, resolvingAgainstBaseURL: false)
-				components?.queryItems = request.extraQueryItems
+				let queryItems = (components?.queryItems ?? []) + request.extraQueryItems
+				components?.queryItems = queryItems
 				let finalUrl = components?.url ?? totalUrl
 				
 				switch request.type {
