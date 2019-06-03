@@ -23,6 +23,18 @@ public extension NetworkService {
 		@escaping NetworkService.Log,
 		@escaping NetworkService.Progress,
 		@escaping (NetworkKit.NetworkResponse<Data?>) -> Void
+	) -> NetworkService.CancelRequest {
+		let manager = SessionManager(configuration: sessionConfig)
+		return alamofireRequest(manager)
+	}
+	
+	@discardableResult
+	static func alamofireRequest(_ manager: SessionManager) -> (
+		URL,
+		NetworkKit.Request<Data>,
+		@escaping NetworkService.Log,
+		@escaping NetworkService.Progress,
+		@escaping (NetworkKit.NetworkResponse<Data?>) -> Void
 		) -> NetworkService.CancelRequest {
 			return { baseUrl, request, log, progress, completion in
 				let totalUrl = request.fullUrl(baseUrl: baseUrl)
@@ -35,7 +47,7 @@ public extension NetworkService {
 				switch request.type {
 				case .request(let parameters, let parametersEncoding):
 					return self.request(
-						sessionConfig: sessionConfig,
+						manager: manager,
 						url: finalUrl,
 						method: request.method,
 						headers: request.headers,
@@ -48,7 +60,7 @@ public extension NetworkService {
 					
 				case .uploadMultipartData(let parameters):
 					return uploadMultipart(
-						sessionConfig: sessionConfig,
+						manager: manager,
 						url: finalUrl,
 						method: request.method,
 						headers: request.headers,
@@ -63,7 +75,7 @@ public extension NetworkService {
 	}
 	
 	private static func request(
-		sessionConfig: URLSessionConfiguration,
+		manager: SessionManager,
 		url: URL,
 		method: NetworkKit.HTTPMethod,
 		headers: [String: String]?,
@@ -73,12 +85,10 @@ public extension NetworkService {
 		log: @escaping NetworkService.Log,
 		progress: @escaping NetworkService.Progress,
 		completion: @escaping (NetworkKit.NetworkResponse<Data?>) -> Void
-		) -> NetworkService.CancelRequest {
+	) -> NetworkService.CancelRequest {
 		let encodingAlamofire = parametersEncoding.alamofire
 		let methodAlamofire = method.alamofire
 		let successCodesArray = Array(successCodes.lowerBound ..< successCodes.upperBound)
-		
-		let manager = SessionManager(configuration: sessionConfig)
 		
 		let dataRequest = manager
 			.request(
@@ -124,7 +134,7 @@ public extension NetworkService {
 	}
 	
 	private static func uploadMultipart(
-		sessionConfig: URLSessionConfiguration,
+		manager: SessionManager,
 		url: URL,
 		method: NetworkKit.HTTPMethod,
 		headers: [String: String]?,
@@ -136,8 +146,6 @@ public extension NetworkService {
 		) -> NetworkService.CancelRequest {
 		
 		let methodAlamofire = method.alamofire
-		
-		let manager = SessionManager(configuration: sessionConfig)
 		
 		manager
 			.upload(multipartFormData: { formData in
