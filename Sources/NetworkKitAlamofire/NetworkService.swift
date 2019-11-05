@@ -16,6 +16,10 @@ public extension NetworkService {
 		return NetworkService.init(baseUrl: baseUrl, request: self.alamofireRequest(sessionConfig))
 	}
 	
+	static func alamofire(_ baseUrl: URL, _ manager: SessionManager) -> NetworkService {
+		return NetworkService.init(baseUrl: baseUrl, request: self.alamofireRequest(manager))
+	}
+	
 	@discardableResult
 	static func alamofireRequest(_ sessionConfig: URLSessionConfiguration) -> (
 		URL,
@@ -98,7 +102,7 @@ public extension NetworkService {
 				encoding: encodingAlamofire,
 				headers: headers)
 		
-		log(dataRequest.debugDescription)
+		log("⬆️ \(dataRequest.debugDescription)")
 		
 		dataRequest
 			.validate(statusCode: successCodesArray)
@@ -115,7 +119,7 @@ public extension NetworkService {
 				
 				let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )
 				
-				log(response.debugDescription)
+				log("📩 \(response.debugDescription)")
 				
 				if let error = error {
 					let responseError = ResponseError.network(error)
