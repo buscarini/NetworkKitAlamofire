@@ -151,6 +151,8 @@ public extension NetworkService {
 		
 		let methodAlamofire = method.alamofire
 		
+		let successCodesArray = Array(successCodes.lowerBound ..< successCodes.upperBound)
+		
 		manager
 			.upload(multipartFormData: { formData in
 				for (name, parameter) in parameters {
@@ -178,6 +180,7 @@ public extension NetworkService {
 							log(request.debugDescription)
 							
 							request
+								.validate(statusCode: successCodesArray)
 								.uploadProgress(closure: { requestProgress in
 									progress(requestProgress.completedUnitCount, requestProgress.totalUnitCount)
 								})
