@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/buscarini/networkkit.git",
         "state": {
           "branch": null,
-          "revision": "3e6a37255c9fea36fdd9ac612e3c4221bc0dc8c2",
-          "version": "0.2.0"
+          "revision": "c9180a02f5e9b85edb15dd14dcfebd8f456fffdb",
+          "version": "0.2.2"
         }
       }
     ]
