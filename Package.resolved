@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "75bba56748359f297a83f620d45f72cf4ebee4e7",
-          "version": "4.8.2"
+          "revision": "747c8db8d57b68d5e35275f10c92d55f982adbd4",
+          "version": "4.9.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/buscarini/networkkit.git",
         "state": {
           "branch": null,
-          "revision": "c9180a02f5e9b85edb15dd14dcfebd8f456fffdb",
-          "version": "0.2.2"
+          "revision": "99002ce1b6640ba3d5a4292cdf38792558cf466f",
+          "version": "0.2.3"
         }
       }
     ]

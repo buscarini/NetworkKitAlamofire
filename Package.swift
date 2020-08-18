@@ -15,7 +15,7 @@ let package = Package(
             targets: ["NetworkKitAlamofire"]),
     ],
     dependencies: [
-		.package(url: "https://github.com/buscarini/networkkit.git", from: "0.2.2"),
+		.package(url: "https://github.com/buscarini/networkkit.git", from: "0.2.3"),
 		.package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.8.2")
     ],
     targets: [
