@@ -41,7 +41,7 @@
 		OBJ_122 /* HTTPResponse+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* HTTPResponse+Debug.swift */; };
 		OBJ_129 /* CustomEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CustomEncoding.swift */; };
 		OBJ_130 /* HTTPMethod+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* HTTPMethod+Alamofire.swift */; };
-		OBJ_131 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* NetworkService.swift */; };
+		OBJ_131 /* NetworkService+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* NetworkService+Alamofire.swift */; };
 		OBJ_132 /* ParametersEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ParametersEncoding+Alamofire.swift */; };
 		OBJ_134 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_135 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkKit::NetworkKit::Product" /* NetworkKit.framework */; };
@@ -122,7 +122,7 @@
 		"NetworkKitAlamofire::NetworkKitAlamofire::Product" /* NetworkKitAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkKitAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NetworkKitAlamofire::NetworkKitAlamofireTests::Product" /* NetworkKitAlamofireTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NetworkKitAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* HTTPMethod+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMethod+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_11 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		OBJ_11 /* NetworkService+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Alamofire.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* ParametersEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParametersEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		OBJ_15 /* NetworkKitAlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKitAlamofireTests.swift; sourceTree = "<group>"; };
 		OBJ_18 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/josanchez/prog/NetworkKitAlamofire/.build/checkouts/Alamofire/Package.swift; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -329,7 +329,6 @@
 				OBJ_69 /* NetworkKitAlamofire.podspec */,
 				OBJ_70 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_56 /* Utils */ = {
@@ -374,7 +373,7 @@
 			children = (
 				OBJ_9 /* CustomEncoding.swift */,
 				OBJ_10 /* HTTPMethod+Alamofire.swift */,
-				OBJ_11 /* NetworkService.swift */,
+				OBJ_11 /* NetworkService+Alamofire.swift */,
 				OBJ_12 /* ParametersEncoding+Alamofire.swift */,
 			);
 			name = NetworkKitAlamofire;
@@ -511,7 +510,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -560,7 +559,7 @@
 			files = (
 				OBJ_129 /* CustomEncoding.swift in Sources */,
 				OBJ_130 /* HTTPMethod+Alamofire.swift in Sources */,
-				OBJ_131 /* NetworkService.swift in Sources */,
+				OBJ_131 /* NetworkService+Alamofire.swift in Sources */,
 				OBJ_132 /* ParametersEncoding+Alamofire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

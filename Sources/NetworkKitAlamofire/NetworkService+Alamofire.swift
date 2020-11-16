@@ -43,10 +43,17 @@ public extension NetworkService {
 			return { baseUrl, request, log, progress, completion in
 				let totalUrl = request.fullUrl(baseUrl: baseUrl)
 				
-				var components = URLComponents(url: totalUrl, resolvingAgainstBaseURL: false)
-				let queryItems = (components?.queryItems ?? []) + request.extraQueryItems
-				components?.queryItems = queryItems
-				let finalUrl = components?.url ?? totalUrl
+				let finalUrl: URL
+				if extraQueryItems.count > 0 {
+					// WARN: This method unescapes url query parameters in the original full url, and then escapes it again. This can cause issues with some characters depending on the server implementation. For example, Azure escapes / and + while iOS won't
+					var components = URLComponents(url: totalUrl, resolvingAgainstBaseURL: false)
+					let queryItems = (components?.queryItems ?? []) + request.extraQueryItems
+					components?.queryItems = queryItems
+					finalUrl = components?.url ?? totalUrl
+				}
+				else {
+					finalUrl = totalUrl
+				}
 				
 				switch request.type {
 				case .request(let parameters, let parametersEncoding):
