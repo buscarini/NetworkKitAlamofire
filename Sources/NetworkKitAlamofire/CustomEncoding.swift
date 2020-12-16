@@ -18,6 +18,6 @@ public class CustomEncoding {
 
 extension CustomEncoding: ParameterEncoding {
 	public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
-		return try self.encode(urlRequest.asURLRequest(), parameters ?? [:])
+		try self.encode(urlRequest.asURLRequest(), parameters ?? [:])
 	}
 }

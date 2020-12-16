@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,17 +15,24 @@ let package = Package(
             targets: ["NetworkKitAlamofire"]),
     ],
     dependencies: [
-		.package(url: "https://github.com/buscarini/networkkit.git", from: "0.2.3"),
-		.package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.8.2")
+		.package(name: "NetworkKit", url: "https://github.com/buscarini/networkkit.git", from: "0.3.0"),
+		.package(name: "Alamofire", url: "https://github.com/Alamofire/Alamofire.git", from: "5.4.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "NetworkKitAlamofire",
-            dependencies: [ "NetworkKit", "Alamofire" ]),
+            dependencies: [
+				"NetworkKit",
+				"Alamofire" 
+			]),
         .testTarget(
             name: "NetworkKitAlamofireTests",
-            dependencies: ["NetworkKitAlamofire", "NetworkKit", "Alamofire" ]),
+            dependencies: [
+				"NetworkKitAlamofire", 
+				"NetworkKit", 
+				"Alamofire" 
+			]),
     ]
 )

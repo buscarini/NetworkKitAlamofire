@@ -12,12 +12,12 @@ import NetworkKit
 import NetworkKitAlamofire
 
 class NetworkKitAlamofireTests: XCTestCase {
-    func testExample() {
+	func testExample() {
 		let request = Request<Data>(method: .get, url: .full(URL(string: "https://www.google.es")!), type: .request(parameters: [:], parametersEncoding: .url))
 		
 		let service = NetworkService.alamofire(URL(string: "https://www.google.es")!)
 		
-		let expectation = XCTestExpectation(description: "Download google.es home page")
+		let finish = expectation(description: "Download google.es home page")
 		
 		_ = service.request(request, log: { _ in }, completion: { result in
 			switch result {
@@ -30,13 +30,37 @@ class NetworkKitAlamofireTests: XCTestCase {
 				XCTFail()
 			}
 			
-			expectation.fulfill()
+			finish.fulfill()
 		})
 		
-		wait(for: [expectation], timeout: 10.0)
-    }
-    
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+		waitForExpectations(timeout: 5, handler: nil)
+	}
+	
+	func testPost() {
+		let finish = expectation(description: "Make post request")
+		
+		let base = URL(string: "http://httpbin.org")!
+		
+		let params = [ "name" : "test" ]
+		
+		let request = Request<Data>.post(
+			.endpoint("post"),
+			params,
+			encoding: .json
+		)
+		
+		let alamofire = NetworkService.alamofire(base)
+		alamofire.request(request, log: { _ in }) { response in
+			switch response {
+			case let .success(_, httpResponse):
+				XCTAssert(httpResponse.responseCode == 200)
+			case .encodingError, .networkError:
+				XCTFail()
+			}
+			
+			finish.fulfill()
+		}
+		
+		waitForExpectations(timeout: 5, handler: nil)
+	}
 }
