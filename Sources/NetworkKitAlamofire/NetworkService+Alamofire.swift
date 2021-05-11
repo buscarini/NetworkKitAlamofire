@@ -116,19 +116,6 @@ public extension NetworkService {
 			return {}
 		}
 		
-		//
-		//		let dataRequest = manager
-		//			.request(
-		//				url,
-		//				method: methodAlamofire,
-		//				parameters: parameters,
-		//				encoding: encodingAlamofire,
-		//				headers: headers
-		//			)
-		
-		
-		log("⬆️ \(dataRequest)")
-		
 		dataRequest
 			.validate(statusCode: successCodesArray)
 			.downloadProgress(closure: { requestProgress in
@@ -142,6 +129,10 @@ public extension NetworkService {
 				
 				let statusCode = responseHTTP?.statusCode ?? 9999
 				
+				if let request = response.request {
+					log("⬆️ \(request)")
+				}
+
 				let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )
 				
 				log("📩 \(response.debugDescription)")
@@ -188,15 +179,6 @@ public extension NetworkService {
 			return {}
 		}
 		
-		
-		//		return upload(
-		//			multipartFormData: multipartFormData,
-		//			usingThreshold: encodingMemoryThreshold,
-		//			with: urlRequest,
-		//			queue: queue,
-		//			encodingCompletion: encodingCompletion
-		//		)
-		
 		let uploadRequest = session
 			.upload(
 				multipartFormData: { formData in
@@ -226,6 +208,10 @@ public extension NetworkService {
 				let responseHTTP = response.response
 				let data = response.data
 				let error = response.error
+				
+				if let request = response.request {
+					log("⬆️ \(request)")
+				}
 				
 				let statusCode = responseHTTP?.statusCode ?? 9999
 				let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )
