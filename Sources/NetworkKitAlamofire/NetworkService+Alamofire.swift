@@ -116,6 +116,10 @@ public extension NetworkService {
 			return {}
 		}
 		
+		dataRequest.cURLDescription { (curl) in
+			log("⬆️ \(curl)")
+		}
+		
 		dataRequest
 			.validate(statusCode: successCodesArray)
 			.downloadProgress(closure: { requestProgress in
@@ -128,10 +132,6 @@ public extension NetworkService {
 				let error = response.error
 				
 				let statusCode = responseHTTP?.statusCode ?? 9999
-				
-				if let request = response.request {
-					log("⬆️ \(request)")
-				}
 
 				let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )
 				
@@ -199,6 +199,9 @@ public extension NetworkService {
 				},
 				with: urlRequest
 			)
+			.cURLDescription { curl in
+				log("⬆️ \(curl)")
+			}
 			.validate(statusCode: successCodesArray)
 			.uploadProgress(closure: { requestProgress in
 				progress(requestProgress.completedUnitCount, requestProgress.totalUnitCount)
@@ -208,10 +211,6 @@ public extension NetworkService {
 				let responseHTTP = response.response
 				let data = response.data
 				let error = response.error
-				
-				if let request = response.request {
-					log("⬆️ \(request)")
-				}
 				
 				let statusCode = responseHTTP?.statusCode ?? 9999
 				let response = HTTPResponse(responseCode: statusCode, data: data, url: responseHTTP?.url ?? url, headerFields: responseHTTP?.allHeaderFields as? [String: String] ?? [:] )

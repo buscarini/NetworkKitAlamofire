@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NetworkKitAlamofire"
-  s.version      = "0.3.1"
+  s.version      = "0.3.2"
   s.summary      = ""
   s.description  = <<-DESC
     Your description here.
